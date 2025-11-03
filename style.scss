@@ -13,11 +13,11 @@ header {
     border: solid green 5px;
     height: 10vh;
 
-    h1 {
-        background-color: red;
-    }
-
     nav {
-        background-color: aqua;
+        height: 10vh;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }
