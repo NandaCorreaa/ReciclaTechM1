@@ -12,9 +12,37 @@ header {
   height: 10vh;
 }
 header nav {
-  height: 10vh;
-  width: 40%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  width: 35%;
+  height: 10vh;
+}
+
+.produtosDisponiveis {
+  display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+.produtosDisponiveis article {
+  border: solid #16a34a;
+  width: 18%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.produtosDisponiveis article img {
+  width: 100%;
+}
+.produtosDisponiveis article p {
+  text-align: center;
+  border: solid;
+  width: 90%;
+}
+.produtosDisponiveis article button {
+  margin-bottom: 2rem;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */
