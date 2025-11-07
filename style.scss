@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 header {
@@ -13,14 +14,62 @@ header {
     border: solid green 5px;
     height: 10vh;
 
+
     nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 35%;
         height: 10vh;
+
+        a {
+            color: #4B5563;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
     }
 }
+
+.btnVerde {
+    background-color: #21C05C;
+    padding: 20px;
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+.caixaLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+
+    h1 {
+        color: #1f2937;
+        font-size: 2.5rem;
+    }
+}
+
+
+.apresentacao {
+    height: 50vh;
+    width: 50%;
+    border: solid;
+
+    display: flex;
+    // flex-direction: row;  por padrão, a direção é em linha
+    flex-direction: column; // muda a direção para coluna
+    justify-content: space-around;
+    // flex-direction: column-reverse;
+    // flex-direction: row-reverse;
+}
+
+
+
+
+
+
+
 
 .produtosDisponiveis {
     display: flex;

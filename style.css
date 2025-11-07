@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
@@ -17,6 +18,38 @@ header nav {
   align-items: center;
   width: 35%;
   height: 10vh;
+}
+header nav a {
+  color: #4B5563;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.btnVerde {
+  background-color: #21C05C;
+  padding: 20px;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.caixaLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
+}
+.caixaLogo h1 {
+  color: #1f2937;
+  font-size: 2.5rem;
+}
+
+.apresentacao {
+  height: 50vh;
+  width: 50%;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .produtosDisponiveis {
