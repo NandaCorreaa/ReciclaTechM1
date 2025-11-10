@@ -16,7 +16,7 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 35%;
+  width: 40%;
   height: 10vh;
 }
 header nav a {
@@ -78,4 +78,31 @@ header nav a {
 .produtosDisponiveis article button {
   margin-bottom: 2rem;
   padding: 1rem;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 18vh;
+    flex-direction: column;
+  }
+  header nav {
+    width: 90%;
+  }
+  header nav a {
+    font-size: 0.8rem;
+  }
+  .caixaLogo {
+    width: 50%;
+  }
+  .caixaLogo h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .produtosDisponiveis {
+    flex-direction: column;
+  }
+  .produtosDisponiveis article {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

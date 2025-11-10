@@ -10,7 +10,6 @@ header {
     // justify-content: space-between; Alinha o primeiro item no começo, o último no final e os outros separados igualmente
     justify-content: space-around;
     align-items: center;
-
     border: solid green 5px;
     height: 10vh;
 
@@ -19,7 +18,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 35%;
+        width: 40%;
         height: 10vh;
 
         a {
@@ -50,12 +49,10 @@ header {
     }
 }
 
-
 .apresentacao {
     height: 50vh;
     width: 50%;
     border: solid;
-
     display: flex;
     // flex-direction: row;  por padrão, a direção é em linha
     flex-direction: column; // muda a direção para coluna
@@ -63,13 +60,6 @@ header {
     // flex-direction: column-reverse;
     // flex-direction: row-reverse;
 }
-
-
-
-
-
-
-
 
 .produtosDisponiveis {
     display: flex;
@@ -101,6 +91,42 @@ header {
         button {
             margin-bottom: 2rem;
             padding: 1rem;
+        }
+    }
+}
+
+// Quero que você aplique esse estilo em telas de 0px até 768px
+@media(max-width: 500px) {
+    header {
+        height: 18vh;
+        flex-direction: column;
+
+
+        nav {
+            width: 90%;
+
+            a {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .caixaLogo {
+        width: 50%;
+
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+
+// @media screen é uma forma mais específica de usar a media query, dizendo que os estilos devem ser aplicados apenas em telas (ou seja, dispositivos com “screen”, como celulares, tablets, notebooks, etc.)
+@media screen and (max-width: 768px) {
+    .produtosDisponiveis {
+        flex-direction: column;
+
+        article {
+            width: 50%;
         }
     }
 }
