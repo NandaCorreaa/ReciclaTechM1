@@ -43,13 +43,33 @@ header nav a {
   font-size: 2.5rem;
 }
 
-.apresentacao {
-  height: 50vh;
-  width: 50%;
-  border: solid;
+.primeiraSection {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+}
+.primeiraSection section {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
+}
+.primeiraSection section h2 {
+  font-size: 3.75rem;
+  width: 60%;
+}
+.primeiraSection section p {
+  font-size: 1.25rem;
+  width: 65%;
+}
+
+.boxBtnsPrimeiraSection {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.boxBtnsPrimeiraSection button {
+  padding: 30px 40px;
+  cursor: pointer;
 }
 
 .produtosDisponiveis {
@@ -96,6 +116,34 @@ header nav a {
   }
   .caixaLogo h1 {
     font-size: 2rem;
+  }
+  .primeiraSection {
+    flex-direction: column;
+    align-items: center;
+  }
+  .primeiraSection img {
+    width: 50vw;
+  }
+  .primeiraSection section {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+  }
+  .primeiraSection section h2 {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  .primeiraSection section p {
+    width: 100%;
+    text-align: center;
+  }
+  .boxBtnsPrimeiraSection {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  .boxBtnsPrimeiraSection button {
+    padding: 10px 20px;
   }
 }
 @media screen and (max-width: 768px) {

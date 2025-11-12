@@ -49,16 +49,42 @@ header {
     }
 }
 
-.apresentacao {
-    height: 50vh;
-    width: 50%;
-    border: solid;
+.primeiraSection {
+    // border: solid #ff0000;
     display: flex;
-    // flex-direction: row;  por padrão, a direção é em linha
-    flex-direction: column; // muda a direção para coluna
     justify-content: space-around;
-    // flex-direction: column-reverse;
-    // flex-direction: row-reverse;
+    height: 70vh;
+
+    section {
+        // border: solid green;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h2 {
+            font-size: 3.75rem;
+            // border: solid;
+            width: 60%;
+        }
+
+        p {
+            font-size: 1.25rem;
+            width: 65%;
+            // border: solid;
+        }
+    }
+}
+
+.boxBtnsPrimeiraSection {
+    // border: solid;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        padding: 30px 40px;
+        cursor: pointer;
+    }
 }
 
 .produtosDisponiveis {
@@ -118,6 +144,42 @@ header {
             font-size: 2rem;
         }
     }
+
+    .primeiraSection {
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 50vw;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-evenly;
+            height: 50vh;
+
+            h2 {
+            font-size: 1.5rem;
+            width: 100%;
+            text-align: center;
+            }
+
+            p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .boxBtnsPrimeiraSection {
+        width: 100%;
+        justify-content: space-evenly;
+        
+        button {
+            padding: 10px 20px;
+        }
+    }
+
 }
 
 // @media screen é uma forma mais específica de usar a media query, dizendo que os estilos devem ser aplicados apenas em telas (ou seja, dispositivos com “screen”, como celulares, tablets, notebooks, etc.)
